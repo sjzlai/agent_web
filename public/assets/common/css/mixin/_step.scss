@@ -1,0 +1,121 @@
+/* 特点介绍*/
+/* forIE9 */
+.ie9{
+    .step__title--sub{
+        display: table !important;
+        border-bottom: 2px solid transparent !important;
+        .step__title--item{
+            float: left !important;
+            display: table-cell !important;
+            margin-left: 110px !important;
+        }
+    }
+}
+
+.step__warp{
+    width: 100%;
+    background-color: $gray-normal;
+    padding: 34px 18px;
+    min-height: 700px;
+    .step__title{
+        border-bottom: 1px solid $gray-normaler;
+        padding-bottom: 14px;
+        padding-left: 16px;
+        font-size: 20px;
+        color: $gray;
+        span{
+            display: inline-block;
+            float: right;
+            cursor: pointer;
+            font-size: 14px;
+            color:$primary;
+            &.step__title--tag{
+                width: 22px;
+                height: 22px;
+                background: url(../images/changepass-change.png) no-repeat center center;
+                background-size: cover;
+            }
+        }
+    }
+    .step__content{
+        .step__title--sub{
+                @include fj(space-between);
+                align-item: center;
+                position: relative;
+                border-bottom: 2px solid $gray-normaler;
+                .step__title--item{
+                    flex: 1 0 0;
+                    position: relative;
+                    text-align: center;
+                    .step__nav{
+                        display: inline-block;
+                        position: relative;
+                        vertical-align: middle;
+                        span {
+                            display: inline-block;
+                            list-style: none;
+                            position: relative;
+                            top: 17px;
+                            width: 22px;
+                            height: 22px;
+                            background-color: $gray-light;
+                            border-radius: 50%;
+                            color: #fff;
+                            vertical-align: middle;
+                            line-height: 22px;
+                        }
+                        a{
+                            display: inline-block;
+                            margin-left: 8px;
+                            vertical-align: text-top;
+                            padding: 14px 0;
+                            color: $gray-light;
+                            font-size: 18px;
+                        }
+                        em{
+                            display: block;
+                            position: absolute;
+                            margin: 0 auto;
+                            width: 100%;
+                            left: 5px;
+                            height: 2px;
+                            background: $gray-light;
+                        }
+                    }
+                    &.active{
+                        span{
+                            background-color: $primary;
+                        }
+                        a{
+                            color:$primary;
+                        }
+                        em{
+                            background-color: $primary;
+                        }
+                    }
+                }
+        }
+
+        .step__content--warp{
+            margin: 20px auto;
+            width: 80%;
+            display: none;
+            &.first{
+                display: block;
+            }
+        }
+        .step__success{
+            position: relative;
+            margin-top: 80px;
+            text-align: center;
+            .word{
+                position: absolute;
+                left: 307px;
+                top: 225px;
+                color: white;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,76 @@
+.ol-modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 999999999;
+}  
+.ol-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -210px;
+    margin-top: -130px;
+    width: 420px;
+    height: 260px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+   
+}
+.ol-modal-icon{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.ol-modal-title {
+    color: #333;
+    padding: 15px 20px;
+    font-size: 20px;
+    background-color: #f0f0f0;
+}
+
+.ol-modal-content {
+    word-wrap: break-word;
+    word-break: normal; 
+    line-height: 1.5;
+    padding: 36px;
+    color: #666;
+}
+.ol-modal-close {
+    text-align: center;
+    padding: 0 35px;;
+    color: #ccc;
+    .close,.success{
+        font-size: 16px;
+        padding: 10px 50px;
+        color: #fff;
+        border-color: $primary;
+    }
+    .success{
+       
+        background-color: $primary;
+    }
+    .close{
+        background-color: white;
+        color: $primary;
+         margin-left: 60px;
+    }
+    span{
+        color: #b2b2b2;
+    }
+}
+
+.modal-enter, .modal-leave-active {
+    opacity: 0;
+    transform: translateY(-100px);
+
+}
+.modal-enter-active, .list-leave-active  {
+    transition: all .5s ease;
+
+}

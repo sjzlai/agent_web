@@ -1,0 +1,193 @@
+ /* 内容整体 */
+.slid__warp{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    min-width: 992px;
+    min-height: 767px;
+    .slid__content{
+        width: 100%;
+        background-color: $gray-normal;
+        min-height: 700px;
+        padding: 34px 18px;
+        margin-bottom: 10px;
+        ul{
+            padding: 0 18px;
+        }
+        .slid__title{
+            border-bottom: 1px solid $gray-normaler;
+            padding-bottom: 14px;
+            padding-left: 16px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: 800;
+            color: $gray-dark;
+            .slid__title--tag{
+                display: inline-block;
+                float: right;
+                cursor: pointer;
+                font-size: 14px;
+                color:$primary;
+            }
+        }
+    }
+}
+
+/* 内容展示项 */
+.bl-item-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 10px 18px;
+    background-color: $gray-normal;
+    margin-bottom: 20px;
+    span{
+        display: inline-block;
+        min-width: 60px;
+        text-align: right;
+        margin-right: 12px;
+        font-weight: 400;
+        &.radio{
+            min-width: 30px;
+            margin-right: 18px;
+        }
+    }
+    input{
+        width: 80%;
+        border: 1px solid $gray-normaler;
+        font-size: 14px;
+        padding: 8px 16px;
+        background-color: white;
+    }
+
+
+}
+
+ /* 表格包围项 */
+ .bl-form-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 10px 0;
+    padding:0px\9\0;
+    padding-left: 18px;
+    background-color: $gray-normal;
+    margin-bottom: 20px;
+    .bl-form__title{
+        display: inline-block;
+        min-width: 60px;
+        text-align: right;
+        margin-right: 12px;
+        font-weight: 400;
+    }
+    .bl-form-item{
+        position: relative;
+    }
+    .title{
+        display: inline-block;
+        min-width: 60px;
+        text-align: right;
+        margin-right: 12px;
+        font-weight: 400;
+        &.radio{
+            min-width: 10px;
+            margin-right: 33px;
+            text-align: left;
+        }
+    }
+
+    input{
+        width: 90%;
+        font-size: 14px;
+        border: 1px solid $gray-normaler;
+        padding: 8px 16px;
+        background-color: white;
+    }
+
+    .radio-box{
+        display: inline-block;
+        position: relative;
+        width: 14px;
+        height: 14px;
+        border: 2px solid $gray-normaler;
+        border-radius: 50%;
+        em{
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+        }
+        &.active em{
+            background-color: $primary;
+        }
+    }
+    input[type='radio']{
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+    }
+    &.code{
+        width: 150px;
+        img{
+            position: absolute;
+            left:160px;
+            top:8px;
+            width: 124px;
+            height: 25px;
+            margin-right: 2px;
+        }
+        span{
+            position: absolute;
+            left:305px;
+            top:12px;
+            width: 70px;
+            height: 14px;
+            color: $primary;
+            cursor: pointer;
+        }
+    }
+    &.overheight{
+        align-items: baseline;
+        height: inherit;
+        textarea{
+            border: 1px solid $gray-normaler;
+        }
+    }
+    p.error,label.error{
+        position: absolute;
+        color:#C00;
+        font-size: 22px;
+        left: -10px;
+        top: 12px;
+        height: 10px;
+        line-height: 26px;
+        margin-bottom: 0;
+        font-weight: 400;
+        align-items: flex-start;
+    }
+}
+/* 分割线 */
+.bl-form-title{
+    padding-bottom: 14px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    border-bottom: 1px solid $gray-normaler;
+    color: $gray-dark;
+}
+/* 表格中的按钮 */
+.btn-wap{
+    margin-top: 40px;
+   .logout{
+        background-color: white;
+        padding: 10px 46px;
+        background-color: $primary;
+        color: white;
+        border-color: $primary;
+    }
+}

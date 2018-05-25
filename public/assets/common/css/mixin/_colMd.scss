@@ -1,0 +1,13 @@
+$gridColumns: 12 !default;
+$gridcolumnWidth: 60px !default; 
+
+ %span-base{ float:left;} 
+
+ @for $i from 1 through $gridColumns { 
+    .clo-md-#{$i} 
+        {
+            @extend %span-base;
+            width: $i  / $gridColumns * 100 ; 
+        }
+    } 
+

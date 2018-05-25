@@ -1,0 +1,76 @@
+
+$primary: #35d4a0 !default;
+$success: #5cb85c !default; 
+$info   : #5bc0de !default; 
+$warning: #fba500 !default; 
+$danger : #d9534f !default; 
+
+
+
+$gray-base  : #000 !default;
+$gray-darker: #3d3d3d !default;
+$gray-dark  : #333 !default;
+$gray       : #666 !default;
+$gray-light : #999 !default;
+$gray-lighter:#cdcdcd !default;
+
+$gray-normal : #fafafa !default;
+$gray-normaler:#e6e6e6 !default; // border 1px 的边框使用
+
+$bg-f5: #f5f5f5 !default; // background-color 通用背景颜色 灰色
+$bc-fff : #fff !default; // 白色背景颜色
+$bc-f2 : #f2f2f2 !default;
+
+$link: #196cd3 !default;
+
+$default-font: 42px;
+
+
+
+@mixin fj($justify){
+  display: flex;
+  justify-content: $justify;
+}  
+  
+@mixin sc($size, $color){
+  font-size: $size;
+  color: $color;
+}
+
+  //定位全屏
+@mixin heading {
+    margin-bottom: 5rem;
+    h2 {
+        position: relative;
+        font-size: 30px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+        color: #000;
+        text-transform: uppercase;
+        &:after{
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            width: 60px;
+            height: 2px;
+            content: '';
+            margin: 0 auto;
+            background: #F85A16;
+        }
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #828282;
+    }
+    span{
+        display: block;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+
+

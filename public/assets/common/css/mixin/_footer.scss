@@ -1,0 +1,76 @@
+
+/* 底部 */
+#footer{
+    position: relative;
+    width: 100%;
+    background-color: $gray-darker;
+    min-height: 300px;
+    text-align: center;
+    ul{
+        position: relative;
+        vertical-align: middle;
+        li{
+            display: inline-block;
+            &:last-child a, &:first-child a{
+                border-color: transparent;
+            }
+        }
+    }
+    .footer-title{
+          a{
+            display: inline-block;
+            padding: 0px 40px;
+            margin: 10px 0;
+            border-right: 1px solid  #4d4d4d;
+            font-size: 14px;
+            color: white;
+           
+            &.logo{
+                position: relative;
+                top: 40px;
+                margin-right: 40px;
+            }
+        }
+    }
+    .footer-icons{
+        position: relative;
+        margin-top: 50px;
+        font-size: 16px;
+        border-bottom: 1px solid #4c4c4c;
+        padding-bottom: 20px;
+        i{
+            display: inline-block;
+            margin: 10px  50px;
+            color: white;
+            font-size: 36px;
+            &:hover{
+                color: $primary;
+            }
+        }
+        .show_title{
+            position: absolute;
+            display: inline-block;
+            padding: 10px 20px;
+            color: $primary;
+            border: 1px solid $primary;
+        }
+
+    }
+    .tagging{
+        position: absolute;
+        left: 50%;
+        margin-left: -56px;
+        bottom: 0;
+        color: white;
+        font-size: 12px;
+    }
+    .icon-wechats{
+        position: relative;
+        img{
+        display: none;
+            position: absolute;
+            left: -65px;
+        top:-97px;
+        }
+    }
+}

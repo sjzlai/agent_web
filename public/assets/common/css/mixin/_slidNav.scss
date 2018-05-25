@@ -1,0 +1,52 @@
+  .slidNav {
+        background-color: $gray-normal;
+        min-height: 700px;
+        margin-right: 20px;
+        .infor__picbox{
+            padding-top: 66px;
+            img{
+                width: 160px;
+                width: 160px;
+                border-radius: 50%;
+            }
+            .infor__name{
+                margin-top: 10px;
+            }
+        }
+        .slidNav--wrp{
+            margin-top: 70px;
+            .infor__item{
+                position: relative;
+                line-height: 1.6;
+                padding: 4px 0 4px 30px;
+                margin-bottom: 15px;
+                span{
+                    display: inline-block;
+                    width: 20px;
+                    height: 16px;
+                    margin-right: 10px;
+                }
+                a{  
+                    position: relative;
+                    margin-left: 10px;
+                    color: $gray-light;
+                    font-size: 16px;
+                }
+                &.active{
+                    a,i{
+                        color: #000;
+                    }
+                }
+                &.active:after{
+                    display: inline-block;
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 3px;
+                    background: $primary;
+                }
+            }
+        }
+    }
