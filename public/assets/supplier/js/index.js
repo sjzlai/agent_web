@@ -59,9 +59,10 @@
 	            var tel = myform.tel.value;
 	            var psd = myform.psd.value;
 	            var checkcode = myform.code.value;
+	            console.log(tel);
 	            $.ajax({
 	                //指定ajax请求后台php程序
-	                'url': "/sign/login",
+	                'url': "{{url('ad/loginuser')}}",
 	                //指定ajax数据发送类型
 	                'type': 'post',
 	                //指定同步还是异步
@@ -77,8 +78,8 @@
 	                'dataType': 'json',
 	                //成功后的触发事件，参数msg接收到的后台php的返回值
 	                'success': function success(res) {
-
-	                    window.location.href = "/index";
+						console.log(res)
+	                    //window.location.href = "/index";
 	                }
 	            });
 	        }
@@ -102,6 +103,7 @@
 	        var mobile = /^1[3|4|5|7|8]\d{9}$/;
 	        return this.optional(element) || mobile.test(value);
 	    }, "手机格式不对");
+
 	});
 
 /***/ })

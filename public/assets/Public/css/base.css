@@ -710,6 +710,13 @@ h6, .h6 {
       height: 14px;
       color: #35d4a0;
       cursor: pointer; }
+#jsForm > ul > .error {
+  position: absolute;
+  top: 234px;
+  right: 30px;
+  background: #fff;
+}
+
   .bl-form-group.overheight {
     -webkit-box-align: baseline;
     -webkit-align-items: baseline;
