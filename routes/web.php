@@ -16,7 +16,7 @@
 });*/
 
 
-Route::group(['middleware'=>['web'],'namespace'=>'Admin'],function(){
+Route::group(['middleware'=>['web'],'namespace'=>'Home'],function(){
     Route::get('login', 'IndexController@login_index');
     Route::get('index', 'IndexController@index');
     Route::get('ad/imgCode',"IndexController@imgCode");

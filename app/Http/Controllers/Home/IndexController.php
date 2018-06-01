@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Home;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -40,7 +40,7 @@ class IndexController extends Controller
         $input = $request->all();
         $code = session('code');
         //先判断验证码是否正确
-        $codes =strtolower($input['code']);
+        $codes =strtoupper($input['code']);
         if($codes === $code):
            $userinfo = DB::table('agent_user')
                 ->where([
