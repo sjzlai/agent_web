@@ -15,7 +15,7 @@ class IndexController extends Controller
      */
     public function login_index()
     {
-        return view('Index.login');
+        return view('Home.Index.login');
     }
 
     /***
@@ -56,14 +56,25 @@ class IndexController extends Controller
                 Session::put('agent.name', $userinfo->agent_user);
                 return Redirect::to('index');
             endif;
-
         else:
             return back()->withErrors('验证码不正确')->withInput();
         endif;
     }
 
+    /**
+     * @return 首页展示内容
+     */
     public function index()
     {
-        return '123';
+        return view('Home.Index.index');
+    }
+
+    /**
+     * @return  退出登录
+     */
+    public function outlogin(){
+
+        Session::forget('agent');
+        return Redirect::to('login');
     }
 }

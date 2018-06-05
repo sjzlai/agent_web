@@ -27,7 +27,7 @@ var crumbs = function() {
     var router = [{
         index: {
             name: '首页',
-            url: '/index.html',
+            url: '/index.blade.php',
             children: [{
                 personal: {
                     name: '个人中心',

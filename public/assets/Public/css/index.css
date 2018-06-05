@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body a {
+  text-align: center;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.wrap {
+  width: 100%;
+  background: #fff;
+}
+
+.header nav {
+  height: 30px;
+  background: rgba(51, 54, 66, 1);
+}
+
+.nav_container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_manage {
+  display: flex;
+}
+
+.nav_text {
+  display: inline-block;
+  line-height: 30px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.a_text {
+  width: 70px;
+}
+
+.nav_show {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.people {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.people img {
+  display: inline-block;
+}
+
+.nav_link {
+  display: inline-block;
+  width: 100px;
+  line-height: 80px;
+  color: #333;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  display: inline-block;
+  width: 100%;
+}
+
+.advantage_wrap {
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+.advantage_container {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.title_header {
+  position: relative;
+}
+
+.title_text {
+  margin-top: 40px;
+  font-size: 26px;
+  text-align: center;
+  font-family: PingFangSC-Semibold;
+  color: rgba(219, 219, 219, 1);
+}
+
+.position {
+  position: absolute;
+  left: 50%;
+  top: 13px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.position_text {
+  font-size: 22px;
+  font-family: PingFangSC-Semibold;
+  color: rgba(51, 54, 66, 1);
+}
+
+.position_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantage_show {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.advantage_show ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage_show ul li div {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantage_title {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: PingFangSC-Semibold;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+
+.advantage_content {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  color: rgba(128, 128, 128, 1);
+}
+
+.agent_wrap {
+  overflow: hidden;
+  background: rgba(247, 247, 247, 1);
+}
+
+.agent_content {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.agent_item {
+  position: relative;
+  width: 240px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-bottom: 3px solid #35d4a0
+}
+
+.agent_title {
+  font-size: 18px;
+  font-family: PingFangSC-Semibold;
+  color: #35d4a0;
+}
+
+.bottom {
+  position: absolute;
+  left: 50%;
+  top: 120px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background: #35d4a0
+}
+
+.agent_content_text {
+  width: 196px;
+  font-size: 14px;
+  margin-top: 23px;
+  font-family: PingFangSC-Regular;
+  color: rgba(51, 54, 66, 1);
+  text-align: center;
+}
+
+.img_top {
+  margin-top: 47px;
+  margin-bottom: 12px;
+}
+
+.agent_wrapper {
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  overflow: hidden;
+  width: 100%;
+  background: rgba(51, 54, 66, 1);
+}
+
+.first_footer {
+  position: relative;
+  width: 584px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first_wrapper {
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(207, 214, 237, 1);
+}
+
+.li_border {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background: rgba(77, 77, 77, 1);
+}
+
+.footer_ul {
+  width: 301px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.one {
+  left: 344px;
+}
+
+.two {
+  left: 434px;
+}
+
+.three {
+  left: 524px;
+}
+
+.second_footer {
+  height: 70px;
+}
+
+.footer_text {
+  text-align: center;
+  font-size: 10px;
+  font-family: HiraginoSansGB-W3;
+  color: #fff;
+}

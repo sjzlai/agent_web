@@ -111,15 +111,7 @@
                                 </div>
                             @endif
                             </li>
-                            <div class="passSave"><span class="title">记住密码:</span><label id="radio1"
-                                                                                         class="radio-box active"><em></em><input
-                                            id="radio1" type="radio" name="savepass"></label><span
-                                        class="radio--left">是</span><label
-                                        id="radio2" class="radio-box"><em></em><input id="radio2" type="radio"
-                                                                                      name="savepass"></label><span>否</span>
-                            </div>
                         </ul>
-
                         <div class="btn-wap text-left">
                             <button type="submit" class="btn btn-primary btn-outline btn-lg login">登录</button>
                             <button href="#" class="btn btn-primary btn-outline btn-lg logout">注册</button>

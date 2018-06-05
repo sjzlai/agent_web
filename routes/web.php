@@ -21,4 +21,5 @@ Route::group(['middleware'=>['web'],'namespace'=>'Home'],function(){
     Route::get('index', 'IndexController@index');
     Route::get('ad/imgCode',"IndexController@imgCode");
     Route::post('ad/loginuser',"IndexController@login");
+    Route::get('outto', 'IndexController@outlogin');
 });
